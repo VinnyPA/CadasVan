@@ -3,12 +3,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Cadasvan.Models
 {
-    public class Motorista
+    public class Aluno
     {
-        [Key]
-        public int IdMotorista { get; set; }
+        [Key] public int IdAluno { get; set; }
 
-        [Required(ErrorMessage = "Campo obrigatório")]
+        [Required(ErrorMessage ="Campo obrigatório")]
         [Display(Name = "Nome de usuario")]
         public string Nome { get; set; }
 
@@ -37,8 +36,6 @@ namespace Cadasvan.Models
         [Required(ErrorMessage = "Campo obrigatório")]
         [Display(Name = "Sua Senha")]
         [PasswordPropertyText]
-        public string Senha { get; set; }
-        public List<Aluno> Alunos { get; set; }
-        
+        public string Senha { get; set; }   
     }
 }
